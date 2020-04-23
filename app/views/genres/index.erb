@@ -1,0 +1,9 @@
+<ol>
+    <% @genres.each do |genre| %>
+    <li style="font-family: Arial, Helvetica, sans-serif;">
+        <a href="/genres/<%= genre.slug %>">
+            <%= genre.name %>
+        </a>
+    </li>
+    <% end %>
+</ol>

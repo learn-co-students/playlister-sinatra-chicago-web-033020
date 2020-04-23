@@ -1,0 +1,9 @@
+<ol>
+    <% @artists.each do |artist| %>
+    <li style="font-family: Arial, Helvetica, sans-serif;">
+        <a href="/artists/<%= artist.slug %>">
+            <%= artist.name %>
+        </a>
+    </li>
+    <% end %>
+</ol>
