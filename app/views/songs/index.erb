@@ -1,0 +1,13 @@
+<a href="/songs/new">
+    <h1>Create a new song</h1>
+</a>
+
+<ol>
+    <% @songs.each do |song| %>
+    <li style="font-family: Arial, Helvetica, sans-serif;">
+        <a href="/songs/<%= song.slug %>">
+            <%= song.name %>
+        </a>
+    </li>
+    <% end %>
+</ol>
